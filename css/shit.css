@@ -1,0 +1,61 @@
+body {
+    transition: all 1s ease-in 0s;
+    background: #222;
+    height: 100%;
+}
+.ui-mobile,
+.ui-mobile-viewport, .ui-overlay-c,
+.ui-page, .ui-body-c, .ui-page-active{
+    background: #222;
+}
+a, p, span, ul,dl, h1, h2,h3 {
+    /*font-family: 'adobe-garamond-pro';*/
+    font-size: 12px;
+    /*font-weight: normal;*/
+    /*line-height: 24px;*/
+    text-decoration: none;
+    color: #fff;
+}
+.fixedHeader {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    z-index: 10000;
+    background: none;
+}
+
+h1{
+    /*font-size: 30px;*/
+}
+
+.wrapper {
+    margin: 120px 7% 7%;
+    font-size: 0;
+}
+
+.wrapper .container {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.logo {
+    /*top: 20px;*/
+    /*z-index: 100;*/
+    /*position: absolute;*/
+    /*width: 100%;*/
+    /*height: 41px;*/
+    /*opacity: 1;*/
+    /*text-align: left;*/
+    /*padding: 10px 10px 10px 0;*/
+    /*background-color: #999;*/
+    /*opacity: 0.3;*/
+    /*border: 1px solid red;*/
+}
+.logo img {
+    /*left: 4%;*/
+}
+
+
+
+
+
