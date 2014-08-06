@@ -52,7 +52,7 @@ function processData() {
     if(userData.name == "" || (userData.phone=="" && userData.mail=="" && userData.other=="") )
         throw new Error("MUA: No user data");
     else if(shopData!="") {
-        sendOrderMail(userDataToString(userData) + "<hr>" + shopData, "muashop.by@gmail.com'");
+        sendOrderMail(userDataToString(userData) + "<hr>" + shopData, "muashop.by@gmail.com");
 
         if(userData.mail!="")
             sendConfirmationMailToUser(userData, shopData, userData.mail);
