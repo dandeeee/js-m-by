@@ -1,5 +1,3 @@
-
-
 function gatherShopDataAsString(){
     var data = "";
     if(simpleCart.items().length==0)
@@ -54,7 +52,7 @@ function processData() {
     if(userData.name == "" || (userData.phone=="" && userData.mail=="" && userData.other=="") )
         throw new Error("MUA: No user data");
     else if(shopData!="") {
-        sendOrderMail(userDataToString(userData) + "<hr>" + shopData, "danila.dedkov@gmail.com");
+        sendOrderMail(userDataToString(userData) + "<hr>" + shopData, "muashop.by@gmail.com'");
 
         if(userData.mail!="")
             sendConfirmationMailToUser(userData, shopData, userData.mail);
@@ -80,7 +78,7 @@ function sendMail(content, mailTo, callBack) {
         data: {
             'key': 'q5m-17tGhHoYATouRzxK6A',
             'message': {
-                'from_email': 'muashop@gmail.com',   // muashop@gmail.com -- какой-то мейл
+                'from_email': 'muashop.by@gmail.com',
                 'to': [
                     {
                         'email': mailTo,  // muashop@gmail.com
