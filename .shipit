@@ -1,0 +1,6 @@
+host='lexus'
+path='/www/muashop.by/data'
+
+[deploy]
+git checkout master
+git pull
