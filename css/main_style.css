@@ -3,6 +3,7 @@
 .ui-page, .ui-body-c, .ui-page-active{
     background: #000;
     font-family: 'Forum', cursive;
+    /*font-family: "Tenor Sans"*/
 }
 
 .ui-dialog-contain {
@@ -23,6 +24,7 @@
 .ui-content{
     margin: 0;
     padding: 0;
+    overflow: hidden !important;
 }
 
 
@@ -110,9 +112,9 @@ body{
 
 @media all and (max-width: 640px)  {
     .menu h1 {
-        position: fixed;
+        position: absolute;
         margin-left: -1em;
-        top: 1.5em;
+        top: 1.0em;
     }
 
     .menu {
@@ -139,6 +141,8 @@ body{
     color: #d8d8d8;
     margin: 2em 0 0 0;
     padding: 1em 8%;
+    text-align: center;
+    font-size: 120%;
 }
 
 @media all and (min-width: 1280px)  {
@@ -747,7 +751,8 @@ body{
     color: #000000;
     font-size: 120%;
     margin-top: 5%;
-
+    font-family: "Forum";
+    font-weight: bolder;
 }
 .paragraph-descr {
     margin-left: 5%;

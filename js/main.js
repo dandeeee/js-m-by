@@ -18,6 +18,10 @@ $(document).delegate("#mua_page", "pagebeforecreate", function() {
     inflateFooter();
 });
 
+$(document).delegate("#about", "pagebeforecreate", function() {
+    inflateMenu();
+});
+
 $(document).delegate('#submit_data', 'pagebeforecreate', function () {
     $("#order_summary").html(gatherShopDataAsString());
     document.user_data['user_name'].value = localStorage.getItem("userName");

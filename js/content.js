@@ -164,21 +164,26 @@ function createZoomed(id, item){
 //    $.mobile.changePage( "#map", { transition: "slide"});
 }
 
+var MENU_INFLATED = false;
 
 function inflateMenu() {
-    var html = "";
-    html +=
-        '<div class="logo">'+
+    //if(!MENU_INFLATED){
+        var html = "";
+        html +=
+            '<div class="logo">'+
             '<ul>' +
-                '<li><a href="#about">О нас</a></li>'+
-                '<li><a href="#">Как заказать</a></li>'+
-                '<li><h1><a href="#mua_page">MUA</a></h1></li>'+
-                '<li><a href="#">Контакты</a></li>'+
-                '<li><a href="#cart">Заявка : </a><strong><span class="simpleCart_quantity cart-quantity">0</span></strong></li>'+
+            '<li><a href="#about">О нас</a></li>'+
+            '<li><a href="https://instagram.com/muashop.by/">Instagram</a></li>'+
+            '<li><h1><a href="#mua_page">MUA</a></h1></li>'+
+            '<li><a href="http://vk.com/muashop">Вконтакте</a></li>'+
+            '<li><a href="#cart">Заявка : </a><strong><span class="simpleCart_quantity cart-quantity">0</span></strong></li>'+
             '</ul>' +
-        '</div>';
+            '</div>';
 
-    $(".menu").append(html)
+        $(".menu").append(html)
+
+        MENU_INFLATED = true;
+    //}
 }
 
 function inflateFooter(){
