@@ -167,7 +167,7 @@ function createZoomed(id, item){
 var MENU_INFLATED = false;
 
 function inflateMenu() {
-    //if(!MENU_INFLATED){
+    if(!MENU_INFLATED){
         var html = "";
         html +=
             '<div class="logo">'+
@@ -183,7 +183,7 @@ function inflateMenu() {
         $(".menu").append(html)
 
         MENU_INFLATED = true;
-    //}
+    }
 }
 
 function inflateFooter(){
