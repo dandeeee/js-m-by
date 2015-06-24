@@ -22,6 +22,14 @@ $(document).delegate("#about", "pagebeforecreate", function() {
     inflateMenu();
 });
 
+$(document).delegate("#cart", "pagebeforecreate", function() {
+    inflateMenu();
+});
+
+$(document).delegate("#submit_data", "pagebeforecreate", function() {
+    inflateMenu();
+});
+
 $(document).delegate('#submit_data', 'pagebeforecreate', function () {
     $("#order_summary").html(gatherShopDataAsString());
     document.user_data['user_name'].value = localStorage.getItem("userName");
