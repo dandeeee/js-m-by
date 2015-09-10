@@ -175,7 +175,7 @@ function inflateMenu() {
             '<li><a href="#about">О нас</a></li>'+
             '<li><a href="https://instagram.com/muashop.by/">Instagram</a></li>'+
             '<li><h1><a href="#mua_page">MUA</a></h1></li>'+
-            '<li><a href="http://vk.com/muashop">Вконтакте</a></li>'+
+            '<li><a href="http://vk.com/muashop.by">Вконтакте</a></li>'+
             '<li><a href="#cart">Заявка : </a><strong><span class="simpleCart_quantity cart-quantity">0</span></strong></li>'+
             '</ul>' +
             '</div>';
