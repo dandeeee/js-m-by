@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Стильная женская одежда от MUA SHOP</title>
+    <meta charset="utf-8">
+    <title>MUA. Капсульные коллекции женской одежды</title>
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -10,201 +12,192 @@
     <link rel="shortcut icon" href="pic/favicon.ico" type="image/x-icon">
     <link rel="icon" href="pic/favicon.ico" type="image/x-icon">
 
-    <script src="js/lib/jquery.1.10.2.js"></script>
-    <script src="js/lib/jq-mobile.1.4.2.js"></script>
-    <link href="css/jq-mobile.1.4.2.css" rel="stylesheet" type="text/css" media="all">
 
-    <link href="css/grid_item.css" rel="stylesheet" type="text/css" media="all">
-    <link href="css/main_style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
 
-    <script type="text/javascript" src="js/lib/simpleCart.js"></script>
-    <script type="text/javascript" src="js/itemsDB.js"></script>
-    <script type="text/javascript" src="js/content.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/shopSetup.js"></script>
-    <script type="text/javascript" src="js/mailing.js"></script>
+    <link rel="stylesheet" href="css/swiper.min.css">
 
-    <script src="js/lib/idangerous.swiper.js"></script>
-    <link rel="stylesheet" href="css/idangerous.swiper.css">
-    <link rel="stylesheet" href="css/swiper.css">
+    <style>
 
-    <link href='http://fonts.googleapis.com/css?family=Tenor+Sans' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Forum&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        html, body {
+            position: relative;
+            height: 100%;
+            min-height: 100%;
+            overflow: hidden;
+        }
 
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color:#000;
+            margin: 0;
+            padding: 0;
+        }
 
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-pagination-bullet {
+            opacity: 1;
+            background: black;
+            width: 0.65em;
+            height: 0.65em;
+        }
+        .swiper-pagination-bullet-active {
+            opacity: 1;
+            background: #4ff8ff;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+
+            min-height:100% !important;
+            background-size:cover !important;
+        }
+
+        .slide-1 { background:url("pic/coll-10.0/01.jpg") no-repeat center center; }
+        .slide-2 { background:url("pic/coll-10.0/02.jpg") no-repeat center center; }
+        .slide-3 { background:url("pic/coll-10.0/03.jpg") no-repeat center center; }
+        .slide-4 { background:url("pic/coll-10.0/04.jpg") no-repeat center center; }
+        .slide-5 { background:url("pic/coll-10.0/05.jpg") no-repeat center center; }
+        .slide-6 { background:url("pic/coll-10.0/06.jpg") no-repeat center center; }
+        .slide-7 { background:url("pic/coll-10.0/07.jpg") no-repeat center center; }
+        .slide-8 { background:url("pic/coll-10.0/08.jpg") no-repeat center center; }
+        .slide-9 { background:url("pic/coll-10.0/09.jpg") no-repeat center center; }
+
+        .head {
+            position: absolute;
+            z-index: 10;
+
+            padding: 0;
+            margin: 0;
+            width: 90%;
+            left: 5%;
+            top: 0;
+            font-size: 150%;
+            color: white !important;
+        }
+
+        .logo {
+            float: left;
+        }
+
+        .logo img{
+            width: 6em;
+            margin: .8em;
+        }
+
+        .links {
+            float: right;
+            color: white !important;
+            font-size: 170%;
+        }
+
+        .links a{
+            color: black !important;
+            font-weight: normal !important;
+            margin: 0.5em 0;
+        }
+
+        .address {
+            position: absolute;
+            z-index: 10;
+            bottom: 8%;
+            right: 1%;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            text-align: right;
+            font-size: 130%;
+            color: black !important;
+            font-family: 'PT Serif', serif;
+        }
+
+        .address a{
+            color: #4ff8ff !important;
+            text-decoration: underline;
+            font-family: 'PT Serif', serif;
+        }
+
+        .collection {
+            position: absolute;
+            z-index: 10;
+            bottom: 23%;
+            left: 0;
+        }
+
+        .collection img {
+            width: 30em;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+    </style>
 </head>
 <body>
 
-    <div data-role="page" id="mua_page" data-title="MUA">
-
-        <div class="menu"></div>
-
-        <div data-role="content">
-            <div id="main" class="wrapper"></div>
-        </div>
-
-        <div class="footer">
-            <p>
-                <a href="index.html">В начало </a>
-                | <a href="#about">О нас </a>
-                | <a href="https://instagram.com/muashop.by/">Instagram</a>
-                | <a href="http://vk.com/muashop">Вконтакте</a>
-                | <a href="#cart">Заявка</a> : <strong><span class="simpleCart_quantity cart-quantity">0</span></strong>
-            </p>
-
-            <p>
-                <b>Телефон:&nbsp;</b>(+375 29) 311-13-41
-                &nbsp;|&nbsp;
-                <b>E-mail:&nbsp;</b><a href="mailto:muashop@gmail.com">muashop@gmail.com</a>
-            </p>
-
-            <hr>
-            <h1>MUA</h1>
-        </div>
+<div class="head">
+    <div class="logo"><img src="pic/mua-logo.svg"></div>
+    <div class="links">
+        <a href="https://instagram.com/muashop.by" class="fa fa-instagram"></a>
+        <a href="http://vk.com/muashop" class="fa fa-vk"></a>
     </div>
+</div>
 
-    <div id="about" data-role="page">
-        <div class="menu"></div>
+<div class="collection">
+    <img src="pic/collection-140-15.svg">
+</div>
 
-        <div data-role="content" class="about-page">
-            <h1>О нас</h1>
+<div class="address">Беларусь, Минск, Кульман, 3 (ТЦ Coolman, пав. 111)<br><a href="mailto:info@muashop.by">info@muashop.by</a></div>
 
-            <p class="paragraph-title"><strong>MUA</strong> &mdash; это просто красивая одежда</p>
-            <p class="paragraph-descr">Доверие и репутация — это то, что мы больше всего ценим. Поэтому мы лично отбираем материалы и фурнитуру, принимаем участие в проектировании лекал, и, конечно, сами разрабатываем дизайн одежды. Мы гордимся нашей продукцией и искренне верим, что создавая одежду для женщин мы несем свою миссию. Качество, разумная цена и безупречный стиль — это то, что мы вам предлагаем. Наверное, именно поэтому сегодня с нами уже более 10.000 подписчиков в социальных сетях. Спасибо вам!</p>
-
-            <p class="paragraph-title"><strong>MUA</strong> &mdash; это то, без чего не может быть настоящей женщины</p>
-            <p class="paragraph-descr">Это то, что создает нас такими, какие мы есть &mdash; полными загадок и милого очарования. В нашей одежде вы раскроете для себя универсальную формулу, объединяющую в себе стиль, яркую индивидуальность и комфорт. Муа - это отличное качество, крой, повторяющий притягательные формы тела, четкий силуэт, который подчеркнет главное в вас &mdash; личность, женщину, которой так повезло вам родиться.</p>
-
-            <p class="paragraph-title"><strong>MUA</strong> &mdash; это одежда, созданная женщинами для женщин</p>
-            <p class="paragraph-descr">Ведь только мы знаем, как много задач порой нам приходится решать, и потому как важно для нас, чтобы одежда была не просто красивой, а еще и удобной, и в конце дня мы выглядели свежо и элегантно. Наша продукция сочетает в себе творческий замысел, мастерство и технологии, она скроена по оригинальным лекалам и производится на лучшей фабрике республики. В каждую единицу продукции вложена душа и любовь работниц швейного цеха, которые создавали для вас MUA.</p>
-
-            <p class="paragraph-title"><strong>MUA</strong> &mdash; это легкость</p>
-            <p class="paragraph-descr">И в ней наш секрет: одежда от MUA реализуется по доступным ценам. Кроме удовлетворения и ощущения счастья от покупки, вас ничто не будет беспокоить. Думайте о прекрасном, приобретая MUA.</p>
-
-            <p class="paragraph-title"><strong>MUA</strong> &mdash; это взаимность</p>
-            <p class="paragraph-descr">Сотрудники и клиенты MUA &mdash; это тот мир, в котором есть место дружбе, пониманию и заботе. Наши покупатели &mdash; все прекрасные и удивительные девушки, которые ценят личный подход в общении с продавцом. Приходите в магазин MUA, ощутите нашу любовь.</p>
-
-            <p class="paragraph-title"><strong>MUA</strong> &mdash; это мир женщин, твой мир</p>
-            <p class="paragraph-descr">Безусловно, Муа есть что предложить независимым и дерзким, женственным и нежным, успешным и амбициозным, творческим и свободным, тем, кто обращает внимание на детали и выбирает яркий, свежий стиль.</p>
-
-            <p class="paragraph-title"><strong>MUA</strong> &mdash; управляй своим миром</p>
-        </div>
-
-        <div class="footer">
-            <p>
-                <a href="index.html">В начало </a>
-                | <a href="#about">О нас </a>
-                | <a href="https://instagram.com/muashop.by/">Instagram</a>
-                | <a href="http://vk.com/muashop">Вконтакте</a>
-                | <a href="#cart">Заявка</a> : <strong><span class="simpleCart_quantity cart-quantity">0</span></strong>
-            </p>
-
-            <p>
-                <b>Телефон:&nbsp;</b>(+375 29) 311-13-41
-                &nbsp;|&nbsp;
-                <b>E-mail:&nbsp;</b><a href="mailto:muashop@gmail.com">muashop@gmail.com</a>
-            </p>
-
-            <hr>
-            <h1>MUA</h1>
-        </div>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide slide-1"></div>
+        <div class="swiper-slide slide-2"></div>
+        <div class="swiper-slide slide-3"></div>
+        <div class="swiper-slide slide-4"></div>
+        <div class="swiper-slide slide-5"></div>
+        <div class="swiper-slide slide-6"></div>
+        <div class="swiper-slide slide-7"></div>
+        <div class="swiper-slide slide-8"></div>
+        <div class="swiper-slide slide-9"></div>
     </div>
+    <div class="swiper-pagination"></div>
+</div>
 
+<!-- Swiper JS -->
+<script src="js/lib/swiper.min.js"></script>
 
-
-    <div id="cart" data-role="page">
-        <div class="menu"></div>
-
-        <div class="cart-content ui-corner-all">
-
-            <!--<div class="cart-items"></div>-->
-
-                <div class="cart-items simpleCart_items">
-                <div class="cartHeaders"></div>
-                </div>
-            <p class="cart-note">
-                <strong>ВНИМАНИЕ! </strong> <b><u> Мы не берем никакой оплаты</u></b>, когда вы отправляете заявку. Менеджер свяжется с вами и обсудит детали заявки.
-            </p>
-            <a href="#mua_page" data-rel="back" data-role="button" data-icon="back" data-inline="true" data-theme="b">Назад</a>
-            <a href="#submit_data" id="submit_cart" data-role="button" data-icon="arrow-r" data-inline="true" data-iconpos="right" class="button-blue">Дальше</a>
-        </div>
-
-        <div class="footer">
-            <p>
-                <a href="index.html">В начало </a>
-                | <a href="#about">О нас </a>
-                | <a href="https://instagram.com/muashop.by/">Instagram</a>
-                | <a href="http://vk.com/muashop">Вконтакте</a>
-                | <a href="#cart">Заявка</a> : <strong><span class="simpleCart_quantity cart-quantity">0</span></strong>
-            </p>
-
-            <p>
-                <b>Телефон:&nbsp;</b>(+375 29) 311-13-41
-                &nbsp;|&nbsp;
-                <b>E-mail:&nbsp;</b><a href="mailto:muashop@gmail.com">muashop@gmail.com</a>
-            </p>
-
-            <hr>
-            <h1>MUA</h1>
-        </div>
-    </div>
-
-    <div id="submit_data" data-role="page">
-        <div class="menu"></div>
-
-        <div class="submit-content  ui-corner-all">
-            <h4>Пожалуйста, введите вашу контактную информацию, чтобы менеджер MuaShop смог с вами связаться.</h4>
-
-            <form name="user_data" class="user-data-form">
-
-                <div data-role="fieldcontain" class="ui-hide-label">
-                    <label for="user_name">Ваше имя:</label>
-                    <input type="text" name="user_name" id="user_name" value="" placeholder="Ваше имя"/>
-                </div>
-
-                <div data-role="fieldcontain" class="ui-hide-label">
-                    <label for="user_phone">Контактный телефон:</label>
-                    <input type="text" name="user_phone" id="user_phone" value="" placeholder="Контактный телефон"/>
-                </div>
-
-                <div data-role="fieldcontain" class="ui-hide-label">
-                    <label for="user_mail">Электронная почта:</label>
-                    <input type="text" name="user_mail" id="user_mail" value="" placeholder="Электронная почта"/>
-                </div>
-
-                <div data-role="fieldcontain" class="ui-hide-label">
-                    <label for="user_other">Другое (facebook, vkontakte, skype):</label>
-                    <input type="text" name="user_other" id="user_other" value="" placeholder="Другое (facebook, vkontakte, skype)"/>
-                </div>
-
-            </form>
-
-            <h1>Ваша заявка:</h1>
-            <p id="order_summary" class="order_summary_p ui-corner-all"></p>
-
-            <a href="#mua_page" data-rel="back" data-role="button" data-icon="back" data-inline="true" data-theme="b">Назад</a>
-            <a href="javascript:processData();" id="mail_btn" data-role="button" class="shop-button button-green" data-icon="check" data-inline="true" data-iconpos="right">OK!</a>
-        </div>
-
-        <div class="footer">
-            <p>
-                <a href="index.html">В начало </a>
-                | <a href="#about">О нас </a>
-                | <a href="https://instagram.com/muashop.by/">Instagram</a>
-                | <a href="http://vk.com/muashop">Вконтакте</a>
-                | <a href="#cart">Заявка</a> : <strong><span class="simpleCart_quantity cart-quantity">0</span></strong>
-            </p>
-
-            <p>
-                <b>Телефон:&nbsp;</b>(+375 29) 311-13-41
-                &nbsp;|&nbsp;
-                <b>E-mail:&nbsp;</b><a href="mailto:muashop@gmail.com">muashop@gmail.com</a>
-            </p>
-
-            <hr>
-            <h1>MUA</h1>
-        </div>
-    </div>
-
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        loop: true,
+        keyboardControl: true,
+        autoplay: 1800
+    });
+</script>
 </body>
 </html>
