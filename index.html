@@ -130,6 +130,7 @@
             font-size: 130%;
             color: black !important;
             font-family: 'PT Serif', serif;
+            font-weight: bolder;
         }
 
         .address a{
@@ -156,8 +157,20 @@
         @media only screen and (max-device-width: 480px) {
             .head {
                 left: 0;
-                width: 97%;
+                width: 99%;
                 top: -1%;
+            }
+
+            .logo img{
+                width: 4em;
+            }
+
+            .links {
+                font-size: 135%;
+            }
+
+            .links a{
+                margin: 0.5em 0.2em;
             }
 
             .collection img{
@@ -166,6 +179,10 @@
 
             .address {
                 font-size: 113%;
+            }
+
+            .hide-on-mobile {
+                display: none;
             }
         }
 
@@ -176,8 +193,8 @@
 <div class="head">
     <div class="logo"><img src="pic/mua-logo.svg"></div>
     <div class="links">
-        <a href="https://instagram.com/muashop.by" class="fa fa-instagram"></a>
         <a href="http://vk.com/muashop" class="fa fa-vk"></a>
+        <a href="https://instagram.com/muashop.by" class="fa fa-instagram"></a>
     </div>
 </div>
 
@@ -185,7 +202,7 @@
     <img src="pic/collection-140-15.svg">
 </div>
 
-<div class="address">г. Минск, Кульман, 3 (ТЦ Coolman, пав. 111)<br><a href="mailto:info@muashop.by">info@muashop.by</a></div>
+<div class="address"><span class="hide-on-mobile">г. Минск,</span> ул. Кульман, д. 3 (ТЦ Coolman, маг. 111)<br><a href="mailto:info@muashop.by">info@muashop.by</a></div>
 
 <div class="swiper-container">
     <div class="swiper-wrapper">
