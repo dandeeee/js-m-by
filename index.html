@@ -28,7 +28,7 @@
         }
 
         body {
-            background: #eee;
+            background: #ffffff;
             font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
             font-size: 14px;
             color:#000;
@@ -72,18 +72,33 @@
             align-items: center;
 
             min-height:100% !important;
-            background-size:cover !important;
+            /*background-size:cover !important;*/
+            background-size: contain !important;
         }
 
-        .slide-1 { background:url("pic/coll-15/01.jpg") no-repeat top center; }
-        .slide-2 { background:url("pic/coll-15/02.jpg") no-repeat top center; }
-        .slide-3 { background:url("pic/coll-15/03.jpg") no-repeat top center; }
-        .slide-4 { background:url("pic/coll-15/04.jpg") no-repeat top center; }
-        .slide-5 { background:url("pic/coll-15/05.jpg") no-repeat top center; }
-        .slide-6 { background:url("pic/coll-15/06.jpg") no-repeat top center; }
-        .slide-7 { background:url("pic/coll-15/07.jpg") no-repeat top center; }
-        .slide-8 { background:url("pic/coll-15/08.jpg") no-repeat top center; }
-        .slide-9 { background:url("pic/coll-15/09.jpg") no-repeat top center; }
+        .swiper-pagination {
+            position: absolute;
+            top: 4.8em;
+            font-size: 9pt !important;
+            right: 0em !important;
+            margin-right: -3%;
+        }
+
+        .slide-1 { background:url("pic/belavia/01.jpg") no-repeat top center; }
+        .slide-2 { background:url("pic/belavia/02.jpg") no-repeat top center; }
+        .slide-3 { background:url("pic/belavia/03.jpg") no-repeat top center; }
+        .slide-4 { background:url("pic/belavia/04.jpg") no-repeat top center; }
+        .slide-5 { background:url("pic/belavia/05.jpg") no-repeat top center; }
+        .slide-6 { background:url("pic/belavia/06.jpg") no-repeat top center; }
+        .slide-7 { background:url("pic/belavia/07.jpg") no-repeat top center; }
+        .slide-8 { background:url("pic/belavia/08.jpg") no-repeat top center; }
+        .slide-9 { background:url("pic/belavia/09.jpg") no-repeat top center; }
+        .slide-10 { background:url("pic/belavia/10.jpg") no-repeat top center; }
+        .slide-11 { background:url("pic/belavia/11.jpg") no-repeat top center; }
+        .slide-12 { background:url("pic/belavia/12.jpg") no-repeat top center; }
+        .slide-13 { background:url("pic/belavia/13.jpg") no-repeat top center; }
+        .slide-14 { background:url("pic/belavia/14.jpg") no-repeat top center; }
+        .slide-15 { background:url("pic/belavia/15.jpg") no-repeat top center; }
 
         .head {
             position: absolute;
@@ -212,12 +227,13 @@
     <div class="logo"><img src="pic/mua-logo.svg"></div>
     <div class="links">
         <a href="http://vk.com/muashop" class="fa fa-vk"></a>
-        <a href="https://instagram.com/muashop.by" class="fa fa-instagram"></a>
+        <a href="https://instagram.com/muashop.official" class="fa fa-instagram"></a>
     </div>
+    <div class="swiper-pagination"></div>
 </div>
 
-<div class="address pc-only">Беларусь, г. Минск, ул. Кульман, д. 3 (ТЦ Coolman, магазин 111)<br><a href="mailto:info@muashop.by">info@muashop.by</a></div>
-<div class="address mobile-only">г. Минск, ул. Кульман, д. 3<br>ТЦ Coolman, магазин 111<br><a href="mailto:info@muashop.by">info@muashop.by</a></div>
+<!--<div class="address pc-only">Проголосуйте за нас на <a href="https://news.tut.by/society/542087.html?#view/29430">tut.by</a></div>-->
+<!--<div class="address mobile-only">Проголосуйте за нас на <a href="https://news.tut.by/society/542087.html?#view/29430">tut.by</a></div>-->
 
 <div class="swiper-container">
     <div class="swiper-wrapper">
@@ -230,8 +246,14 @@
         <div class="swiper-slide slide-7"></div>
         <div class="swiper-slide slide-8"></div>
         <div class="swiper-slide slide-9"></div>
+        <div class="swiper-slide slide-10"></div>
+        <div class="swiper-slide slide-11"></div>
+        <div class="swiper-slide slide-12"></div>
+        <div class="swiper-slide slide-13"></div>
+        <div class="swiper-slide slide-14"></div>
+        <div class="swiper-slide slide-15"></div>
     </div>
-    <div class="swiper-pagination"></div>
+
 </div>
 
 <script src="js/lib/swiper.min.js"></script>
