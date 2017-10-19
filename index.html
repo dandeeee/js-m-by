@@ -7,14 +7,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta name="Description" content="Женская одежда от MUASHOP — это уникальное сочетание отличного качества, стиля,  яркого дизайна и демократичной цены.">
-    <meta name="Keywords" content="mua shop, muashop, mua, муа, муа шоп, муашоп, женская одежда, юбки">
+    <meta name="Description" content="Женская одежда от MUA — это уникальное сочетание отличного качества, стиля,  яркого дизайна и демократичной цены.">
+    <meta name="Keywords" content="mua, muashop, муа, муа шоп, муашоп, женская одежда">
     <link rel="shortcut icon" href="pic/favicon.ico" type="image/x-icon">
     <link rel="icon" href="pic/favicon.ico" type="image/x-icon">
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+    <!--<link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>-->
 
     <link rel="stylesheet" href="css/swiper.min.css">
 
@@ -232,33 +232,33 @@
     <div class="swiper-pagination"></div>
 </div>
 
-<!--<div class="address pc-only">Проголосуйте за нас на <a href="https://news.tut.by/society/542087.html?#view/29430">tut.by</a></div>-->
-<!--<div class="address mobile-only">Проголосуйте за нас на <a href="https://news.tut.by/society/542087.html?#view/29430">tut.by</a></div>-->
-
 <div class="swiper-container">
-    <div class="swiper-wrapper">
+    <div class="swiper-wrapper" id="swiper-slides">
         <div class="swiper-slide slide-1"></div>
         <div class="swiper-slide slide-2"></div>
         <div class="swiper-slide slide-3"></div>
-        <div class="swiper-slide slide-4"></div>
-        <div class="swiper-slide slide-5"></div>
-        <div class="swiper-slide slide-6"></div>
-        <div class="swiper-slide slide-7"></div>
-        <div class="swiper-slide slide-8"></div>
-        <div class="swiper-slide slide-9"></div>
-        <div class="swiper-slide slide-10"></div>
-        <div class="swiper-slide slide-11"></div>
-        <div class="swiper-slide slide-12"></div>
-        <div class="swiper-slide slide-13"></div>
-        <div class="swiper-slide slide-14"></div>
-        <div class="swiper-slide slide-15"></div>
+        <div class="swiper-slide" id="sl-4"></div>
+        <div class="swiper-slide" id="sl-5"></div>
+        <div class="swiper-slide" id="sl-6"></div>
+        <div class="swiper-slide" id="sl-7"></div>
+        <div class="swiper-slide" id="sl-8"></div>
+        <div class="swiper-slide" id="sl-9"></div>
+        <div class="swiper-slide" id="sl-10"></div>
+        <div class="swiper-slide" id="sl-11"></div>
+        <div class="swiper-slide" id="sl-12"></div>
+        <div class="swiper-slide" id="sl-13"></div>
+        <div class="swiper-slide" id="sl-14"></div>
+        <div class="swiper-slide" id="sl-15"></div>
     </div>
 
 </div>
 
+
 <script src="js/lib/swiper.min.js"></script>
 
 <script>
+    var i = 4;
+
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         paginationClickable: true,
@@ -266,6 +266,22 @@
         keyboardControl: true,
         autoplay: 1800
     });
+
+    function populateSwiper() {
+        var slideToLoad = document.getElementById('sl-' + i);
+        slideToLoad.className = 'swiper-slide slide-' + i;
+        loadSwiperSlides()
+    }
+
+    function loadSwiperSlides() {
+        if(i < 16) {
+            setTimeout(populateSwiper, 1000);
+        } else {
+            return
+        }
+    }
+
+    loadSwiperSlides()
 </script>
 </body>
 </html>
