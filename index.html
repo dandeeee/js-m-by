@@ -131,13 +131,24 @@
         .links a{
             color: black !important;
             font-weight: normal !important;
-            margin: 0.5em 0.2em;
+            /*margin: 0.5em 1.2em;*/
+            position: absolute;
+            right: 3em;
+            top: .4em;
+        }
+
+        .links span {
+            text-decoration: underline;
+            font-size: 40%;
+            position: absolute;
+            bottom: .7em;
+            left: 2.8em;
         }
 
         .address {
             position: absolute;
             z-index: 10;
-            bottom: 8%;
+            bottom: 2%;
             right: 1%;
             padding: 0;
             margin: 0;
@@ -150,7 +161,7 @@
         }
 
         .address a{
-            color: #4ff8ff !important;
+            color: #20e4ff !important;
             text-decoration: underline;
             font-family: 'PT Serif', serif;
         }
@@ -226,11 +237,14 @@
 <div class="head">
     <div class="logo"><img src="pic/mua-logo.svg"></div>
     <div class="links">
-        <a href="http://vk.com/muashop" class="fa fa-vk"></a>
-        <a href="https://instagram.com/muashop.official" class="fa fa-instagram"></a>
+        <a href="https://instagram.com/muashop.official" class="fa fa-instagram"><span>muashop.official</span></a>
+        <!--<a href="http://vk.com/muashop" class="fa fa-vk"></a>-->
     </div>
     <div class="swiper-pagination"></div>
 </div>
+
+<div class="address pc-only">г. Минск, Богдановича 23<br><a href="mailto:info@muashop.by">info@muashop.by</a></div>
+<div class="address mobile-only">г. Минск, Богдановича 23<br><a href="mailto:info@muashop.by">info@muashop.by</a></div>
 
 <div class="swiper-container">
     <div class="swiper-wrapper" id="swiper-slides">
