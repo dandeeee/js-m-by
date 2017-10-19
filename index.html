@@ -268,10 +268,12 @@
     });
 
     function populateSwiper() {
-        i++
+        i++;
         var slideToLoad = document.getElementById('sl-' + i);
-        slideToLoad.className = 'swiper-slide slide-' + i;
-        loadSwiperSlides()
+        if(slideToLoad) {
+            slideToLoad.className = 'swiper-slide slide-' + i;
+            loadSwiperSlides()
+        }
     }
 
     function loadSwiperSlides() {
