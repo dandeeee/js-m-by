@@ -237,18 +237,18 @@
         <div class="swiper-slide slide-1"></div>
         <div class="swiper-slide slide-2"></div>
         <div class="swiper-slide slide-3"></div>
-        <div class="swiper-slide slide-4" id="sl-4"></div>
-        <div class="swiper-slide slide-5" id="sl-5"></div>
-        <div class="swiper-slide slide-6" id="sl-6"></div>
-        <div class="swiper-slide slide-7" id="sl-7"></div>
-        <div class="swiper-slide slide-8" id="sl-8"></div>
-        <div class="swiper-slide slide-9" id="sl-9"></div>
-        <div class="swiper-slide slide-10" id="sl-10"></div>
-        <div class="swiper-slide slide-11" id="sl-11"></div>
-        <div class="swiper-slide slide-12" id="sl-12"></div>
-        <div class="swiper-slide slide-13" id="sl-13"></div>
-        <div class="swiper-slide slide-14" id="sl-14"></div>
-        <div class="swiper-slide slide-15" id="sl-15"></div>
+        <div class="swiper-slide" id="sl-4"></div>
+        <div class="swiper-slide" id="sl-5"></div>
+        <div class="swiper-slide" id="sl-6"></div>
+        <div class="swiper-slide" id="sl-7"></div>
+        <div class="swiper-slide" id="sl-8"></div>
+        <div class="swiper-slide" id="sl-9"></div>
+        <div class="swiper-slide" id="sl-10"></div>
+        <div class="swiper-slide" id="sl-11"></div>
+        <div class="swiper-slide" id="sl-12"></div>
+        <div class="swiper-slide" id="sl-13"></div>
+        <div class="swiper-slide" id="sl-14"></div>
+        <div class="swiper-slide" id="sl-15"></div>
     </div>
 
 </div>
@@ -257,7 +257,7 @@
 <script src="js/lib/swiper.min.js"></script>
 
 <script>
-    var i = 4;
+    var i = 3;
 
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
@@ -268,6 +268,7 @@
     });
 
     function populateSwiper() {
+        i++
         var slideToLoad = document.getElementById('sl-' + i);
         slideToLoad.className = 'swiper-slide slide-' + i;
         loadSwiperSlides()
